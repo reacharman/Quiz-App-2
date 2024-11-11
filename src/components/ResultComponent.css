@@ -1,0 +1,123 @@
+body {
+    background-color: #563d7c;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .result-card {
+    background-color: #fffefe;
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 2rem auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .result-title {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+  }
+  
+  .result-message {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: #0c0c0c;
+  }
+  
+  .result-score {
+    text-align: center;
+    color: #4895ef;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+  }
+  
+  .stats-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem 0;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .stat-row {
+    color: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .stat-row:last-child {
+    border-bottom: none;
+  }
+  
+  .stat-row span:first-child {
+    font-weight: 500;
+  }
+  
+  .stat-row span:last-child {
+    font-weight: bold;
+    color: #4895ef;
+  }
+  
+  .result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .play-again-btn, .back-home-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 150px;
+    transition: all 0.3s ease;
+  }
+  
+  .play-again-btn {
+    background-color: #b614e3;
+    color: white;
+  }
+  
+  .play-again-btn:hover {
+    background-color: #a012cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(182, 20, 227, 0.2);
+  }
+  
+  .back-home-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .back-home-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+  }
+  
+  .play-again-btn:active,
+  .back-home-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
